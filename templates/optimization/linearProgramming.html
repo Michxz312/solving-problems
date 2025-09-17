@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Optimization Solver</title>
+    <link rel="stylesheet" href="../../static/css/style.css">
+</head>
+<body>
+    <h1>Linear Optimization Solver</h1>
+    <form method="POST">
+        <label>Objective Coefficients (comma separated):</label><br>
+        <input type="text" name="objective" placeholder="e.g., 3,5" required><br><br>
+
+        <label>Constraints (one per line, format: coeff1,coeff2,... <= RHS):</label><br>
+        <textarea name="constraints" rows="5" placeholder="e.g., 1,2 <= 10"></textarea><br><br>
+
+        <button type="submit">Solve</button>
+    </form>
+</body>
+</html>
